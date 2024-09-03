@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Design 1/2 Final</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar that always stays on the top of the page -->
+    <div class="w3-top">
+
+        <div class="w3-bar" id="myNavbar">
+            <a href="index.html" class="w3-bar-item w3-button w3-animate-opacity">
+                <i class="fa fa-home"></i> HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-animate-opacity">
+                <i class="fa fa-info-circle"></i> ABOUT</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-animate-opacity w3-light-blue">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="https://www.bondstreetmortgageq.com/loan-app/?siteId=2191488867&lar=admin&workFlowId=72056"
+                class="w3-bar-item w3-button w3-hide-small w3-animate-opacity" target="_blank"><i
+                    class="fa fa-user-circle"></i> APPLY</a>
+
+            <!--hamburger button that I might use for a dropdown that routes to differnet parts of webpage internally-->
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right" id="dropdownBtn">
+                <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+
+    </div>
+
+    <!--CONSIDER CONSIDER: adding w3-opacity-min to first div-->
+    <!-- Main image one with the Bond Street Mortgage logo in front of it -->
+    <div class="contactBg1 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BOND<span
+                    class="w3-hide-small"> STREET</span> MORTGAGE</span>
+        </div>
+    </div>
+
+
+    <!-- Code for contact part -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center"><em>Please provide your name, email, and the message</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <!--The iframe section-->
+            <div class="w3-col m4 w3-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.153029011273!2d-74.08086982269859!3d40.93431322397393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fb02ee02eebb%3A0xf0db435d89b27dda!2s115%20W%20Century%20Rd%2C%20Paramus%2C%20NJ%2007652!5e0!3m2!1sen!2sus!4v1714866662638!5m2!1sen!2sus"
+                    class="w3-image w3-round" style="width: 100%; height: 280px; border:0;" allowfullscreen="allowfullscreen" loading="eager"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> NJ 07652,
+                    US<br>
+                    <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> Phone: (888)
+                    588-5522<br>
+                    <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i> Email:
+                    loaninfo@bondstreetloans.com<br>
+                    <i class="fa fa-drivers-license fa-fw w3-xlarge w3-margin-right"></i> NMLS:
+                    #191351
+                </div>
+                <p>Send us your feedback below, such as issues with the website <i
+                        class="fa fa-chevron-circle-down"></i> </p>
+
+                <!-- This feedback page doesn't ACTUALLY work-->
+                <form action="https://www.bondstreetloans.com/blog/contact/" target="_blank" id="msgForm">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" id="nameInput" required>
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" id="emailInput" required>
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" id="msgInput" required>
+
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 w3-opacity">
+        <div class="w3-xlarge w3-section">
+            <a href="https://m.facebook.com/BondStreetMortgage" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" onclick="openFacebook()"></i></a>
+            <a href="https://www.google.com" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/bondstreetmtg" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/bond-street-mortgage-llc" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>DISCLOSURE: All rates are subject to change without notice and all applicants must meet underwriting
+            guidelines.<br>
+            <span class="footer-link"><a href="https://bondstreetmortgage.com/privacy" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">Privacy Policy</a></span> | <span class="footer-link"><a
+                    href="https://bondstreetmortgage.com/licensing" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">Licensing Info</a></span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

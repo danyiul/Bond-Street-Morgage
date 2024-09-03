@@ -1,0 +1,247 @@
+<!--
+Helpful website I used:
+    https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
+    https://www.w3schools.com/w3css/w3css_animate.asp
+    https://www.w3schools.com/cssref/pr_background-position.php
+    https://www.w3schools.com/w3css/w3css_references.asp
+    https://www.w3schools.com/w3css/w3css_padding.asp
+    https://www.w3schools.com/w3css/w3css_grid.asp
+    https://www.unsplash.com
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Design 1/2 Final</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar that always stays on the top of the page -->
+    <div class="w3-top">
+
+        <div class="w3-bar" id="myNavbar">
+            <a href="index.html" class="w3-bar-item w3-button w3-animate-opacity w3-light-blue">
+                <i class="fa fa-home"></i> HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-animate-opacity">
+                <i class="fa fa-info-circle"></i> ABOUT</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-animate-opacity">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="https://www.bondstreetmortgageq.com/loan-app/?siteId=2191488867&lar=admin&workFlowId=72056"
+                class="w3-bar-item w3-button w3-hide-small w3-animate-opacity" target="_blank"><i
+                    class="fa fa-user-circle"></i> APPLY</a>
+
+            <!--hamburger button that I might use for a dropdown that routes to differnet parts of webpage internally-->
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right" id="dropdownBtn">
+                <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+
+    </div>
+
+    <!--CONSIDER CONSIDER: adding w3-opacity-min to first div-->
+    <!-- Background Image 1 with Bond Street Mortgage-->
+    <div class="indexBg1 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BOND<span
+                    class="w3-hide-small"> STREET</span> MORTGAGE</span>
+        </div>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="w3-content w3-container w3-padding-48">
+        <h3 class="w3-center">OUR MISSION</h3>
+        <p class="w3-center"><em>At Bond Street Mortgage</em></p>
+        <p>At Bond Street Mortgage, we're dedicated to providing a unique Private Client Experience,
+            ensuring every individual receives exceptional service and expert guidance typically reserved
+            for a select few. Regardless of financial status, we believe in delivering the highest level
+            of attention and support throughout the mortgage process, with client satisfaction as our
+            ultimate measure of success. Our team is committed to fostering an environment of continuous
+            learning and teamwork, where individuals take pride in their work and strive for excellence.
+            We encourage open communication, idea exchange, and mutual respect among colleagues,
+            fostering a culture where success is shared and everyone has the opportunity to excel.
+            Our mission is to establish ourselves as a prominent player in the U.S. mortgage banking
+            sector by offering unparalleled service in an industry craving responsible and transparent
+            lending practices. We are driven by our core values of openness, learning, achievement,
+            innovation, and the development of well-rounded business professionals.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p style="margin-bottom: 5px;"><b><i class="fa fa-handshake-o w3-margin-right"></i>Get Approved Fast</b>
+                </p>
+                <img src="/images/indexLoanApproved.jpeg" onclick="openCoolWebsite()" class="w3-round w3-image" alt="Photo of Me" width="500"
+                    height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>The foundation of Bond Street's success hinges on our core values,
+                    driving our operations and shaping client relationships.
+                    Firstly, we foster continuous learning, recognizing the dynamic
+                    nature of the mortgage industry demands staying informed to
+                    better serve clients. Secondly, daily communication with borrowers
+                    and referral sources ensures transparency and responsiveness,
+                    nurturing trust and confidence. Moreover, we prioritize simplicity
+                    and clarity in our processes, breaking down complexities from the
+                    outset to foster collaboration and understanding among stakeholders.
+                    Lastly, we are committed to constantly improving our standards and
+                    procedures, maintaining a reputation for reliability and integrity.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Percent Chart thingy-->
+    <div class="w3-container" style="max-width: 1000px; margin: 0 auto;">
+
+        <p style="letter-spacing: 3.5px;">Loans with no prepayment penalties</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-opacity" style="width:100%">100%
+            </div>
+        </div>
+
+        <p style="letter-spacing: 3.5px;">Customers satisfied</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-opacity" style="width:99%">99%
+            </div>
+        </div>
+
+        <p style="letter-spacing: 3.5px;">Loans closed on time</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-opacity" style="width:95%">95%
+            </div>
+        </div>
+
+        <p style="letter-spacing: 3.5px;">Loans approved</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-opacity" style="width:90%">90%
+            </div>
+        </div>
+
+        <p style="letter-spacing: 3.5px;">First-time homebuyers served</p>
+        <div class="w3-light-grey" style="margin-bottom: 115px">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-opacity" style="width:84%">84%
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Gray center bar thing with arbitrary mortgage information-->
+    <div class="w3-row w3-center w3-padding-16" style="color: #fff">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">5+</span><br>
+            National Branches
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">2000+</span><br>
+            Mortgage Loans Funded
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">275,000+</span><br>
+            Average Loan Amount Funded
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">15+</span><br>
+            Average Loan Processing Days
+        </div>
+    </div>
+
+    <!-- Background Image 2 -->
+    <!-- consider adding w3-opacity-min-->
+    <div class="indexBg2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-wide" style="color: #fff">OUR WORK</span>
+        </div>
+    </div>
+
+    <!-- Portfolio section with the cool houses that I plucked off Google Images. I literally just Googled "house"-->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Some Homes Financed by Us</h3>
+        <p class="w3-center"><em>Turning houses into homes, <br> one mortgage at a time</em></p>
+        <br>
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="/images/house1.jpeg" class="w3-opacity w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 1">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house2.jpg" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 2">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house3.jpg" class="w3-opacity w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 3">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house4.jpg" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 4">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="/images/house5.webp" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 5">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house6.webp" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 6">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house7.webp" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 7">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/images/house8.jpg" class="w3-opacity-min w3-hover-opacity-off portfolio-image"
+                    alt="House Picture 8">
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image 3  -->
+    <!-- CONSIDER adding w3-opacity-min -->
+    <div class="indexBg3 w3-display-container ">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide ">REVIEWS</span>
+        </div>
+    </div>
+
+    <div class="iframe-container">
+        <iframe id="bondStreetMortgageIframe" src="https://www.zillow.com/lender-profile/BondStreetMortgage/#reviews"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 w3-opacity">
+        <div class="w3-xlarge w3-section">
+            <a href="https://m.facebook.com/BondStreetMortgage" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" onclick="openFacebook()"></i></a>
+            <a href="https://www.google.com" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/bondstreetmtg" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/bond-street-mortgage-llc" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <p>DISCLOSURE: All rates are subject to change without notice and all applicants must meet underwriting
+            guidelines.<br>
+            <span class="footer-link"><a href="https://bondstreetmortgage.com/privacy" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">Privacy Policy</a></span> | <span class="footer-link"><a
+                    href="https://bondstreetmortgage.com/licensing" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">Licensing Info</a></span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
